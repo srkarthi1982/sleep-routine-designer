@@ -1,23 +1,92 @@
 ---
 import AppShell from "../layouts/AppShell.astro";
 import { AvContainer, AvButton } from "@ansiversa/components";
+
+const title = "Sleep Routine Designer – Ansiversa";
+const description = "Build relaxing night routines.";
 ---
 
-<AppShell title="Sleep Routine Designer" description="Sleep Routine Designer – powered by Ansiversa.">
-    <!-- Hero -->
+<AppShell title={title} description={description}>
+  <!-- Hero -->
   <section class="av-hero">
     <AvContainer size="narrow" className="av-hero__content--narrow">
       <div class="av-hero__content">
         <div class="av-kicker">
-          <span>Ansiversa Ecosystem</span>
+          <span>Lifestyle & Personal · Ansiversa Mini App</span>
         </div>
         <h1 class="av-gradient-text">Sleep Routine Designer</h1>
         <p>
-          This project uses the shared @ansiversa/components package and global design system. Use this starter as a base for your next mini-app in the Ansiversa universe.
+          Build relaxing night routines.
         </p>
       </div>
       <div class="av-cta-row">
-        <AvButton href="https://www.ansiversa.com">Visit Ansiversa</AvButton>
+        <AvButton href="https://sleep-routine-designer.ansiversa.com">Launch Sleep</AvButton>
+      </div>
+    </AvContainer>
+  </section>
+
+  <!-- Problem -->
+  <section class="av-section">
+    <AvContainer size="narrow">
+      <div class="av-section-header">
+        <h2 class="av-section-title">The problem it solves</h2>
+        <p class="av-section-lead">
+          Personal goals, habits, and routines are easy to start and hard to maintain.
+        </p>
+      </div>
+      <div class="av-section-body space-y-3 text-slate-300">
+        <p>Sleep Routine Designer keeps this one area of your life simple, trackable, and encouraging.</p>
+      </div>
+    </AvContainer>
+  </section>
+
+  <!-- Why this mini app -->
+  <section class="av-section">
+    <AvContainer size="narrow">
+      <div class="av-section-header">
+        <h2 class="av-section-title">Why Sleep Routine Designer feels different</h2>
+        <p class="av-section-lead">
+          A focused mini app inside the larger Ansiversa ecosystem.
+        </p>
+      </div>
+      <div class="av-section-body">
+        <ul class="space-y-2 text-slate-300 list-disc list-inside">
+          <li>Designed for real daily life, not perfect theory.</li>
+          <li>Helps you see progress in small, manageable steps.</li>
+          <li>Works alongside other Ansiversa tools that support your day.</li>
+        </ul>
+      </div>
+    </AvContainer>
+  </section>
+
+  <!-- How it works -->
+  <section class="av-section">
+    <AvContainer size="narrow">
+      <div class="av-section-header">
+        <h2 class="av-section-title">How it works</h2>
+        <p class="av-section-lead">
+          Simple, clear steps so people can start in under a minute.
+        </p>
+      </div>
+      <ol class="av-section-body space-y-2 text-slate-300 list-decimal list-inside">
+        <li>Open Sleep Routine Designer at the start or end of your day.</li>
+        <li>Add or update your latest actions, plans, or reflections.</li>
+        <li>Review your progress and adjust your next small step.</li>
+      </ol>
+    </AvContainer>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="av-section">
+    <AvContainer size="narrow">
+      <div class="av-section-header">
+        <h2 class="av-section-title">Ready to try Sleep Routine Designer?</h2>
+        <p class="av-section-lead">
+          Open the app, follow the simple flow, and let it handle the heavy lifting.
+        </p>
+      </div>
+      <div class="av-cta-row">
+        <AvButton href="https://sleep-routine-designer.ansiversa.com">Start with Sleep</AvButton>
       </div>
     </AvContainer>
   </section>
